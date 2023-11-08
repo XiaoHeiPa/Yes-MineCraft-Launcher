@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>page3</class>
+ <widget class="QWidget" name="page3">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1072</width>
+    <height>640</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_4">
+   <item row="1" column="0">
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="1" column="2">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="1">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="2" column="0" colspan="3">
+    <widget class="QStackedWidget" name="stackedWidget">
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <widget class="QWidget" name="page">
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="0" column="0">
+        <widget class="SmoothScrollArea" name="serversSmoothScrollArea">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="serversScrollAreaWidgetContents_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1036</width>
+            <height>527</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_14">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_2"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_2">
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="SmoothScrollArea" name="serversSmoothScrollArea_2">
+         <property name="frameShape">
+          <enum>QFrame::NoFrame</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Plain</enum>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="widgetResizable">
+          <bool>true</bool>
+         </property>
+         <widget class="QWidget" name="serversScrollAreaWidgetContents_3">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>1036</width>
+            <height>539</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <layout class="QGridLayout" name="gridLayout_15">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout_3"/>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_3">
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="BodyLabel" name="BodyLabel">
+         <property name="text">
+          <string>原版MineCraft下载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="ProgressBar" name="ProgressBar">
+         <property name="styleSheet">
+          <string notr="true"/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="BodyLabel" name="BodyLabel_2">
+         <property name="text">
+          <string>带有forge的MineCraft下载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="ProgressBar" name="ProgressBar_2"/>
+       </item>
+       <item row="4" column="0">
+        <widget class="BodyLabel" name="BodyLabel_3">
+         <property name="text">
+          <string>带有fabric的MineCraft下载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="ProgressBar" name="ProgressBar_3"/>
+       </item>
+       <item row="6" column="0">
+        <widget class="BodyLabel" name="BodyLabel_4">
+         <property name="text">
+          <string>带有quilt的MineCraft下载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0">
+        <widget class="ProgressBar" name="ProgressBar_5"/>
+       </item>
+       <item row="8" column="0">
+        <widget class="BodyLabel" name="BodyLabel_5">
+         <property name="text">
+          <string>其他的下载</string>
+         </property>
+        </widget>
+       </item>
+       <item row="9" column="0">
+        <widget class="ProgressBar" name="ProgressBar_4"/>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="page_4">
+      <widget class="LargeTitleLabel" name="LargeTitleLabel">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>240</y>
+         <width>278</width>
+         <height>54</height>
+        </rect>
+       </property>
+       <property name="text">
+        <string>没有下载任务</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="Pivot" name="Pivot"/>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>SmoothScrollArea</class>
+   <extends>QScrollArea</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>LargeTitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>Pivot</class>
+   <extends>QWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>ProgressBar</class>
+   <extends>QProgressBar</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

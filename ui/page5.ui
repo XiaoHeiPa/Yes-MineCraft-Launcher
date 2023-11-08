@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>page5</class>
+ <widget class="QWidget" name="page5">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>972</width>
+    <height>646</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_8">
+   <item row="0" column="1">
+    <widget class="QWidget" name="ymlImageWidget" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>340</width>
+       <height>280</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>340</width>
+       <height>280</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="1" column="0" colspan="2">
+       <widget class="SubtitleLabel" name="ymlTitle">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>Yes Minecraft Launcher 3 发行版</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="CaptionLabel" name="ymlTip">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="text">
+         <string>只为你打造最好的体验</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QWidget" name="ymlImageContainerWidget" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="PixmapLabel" name="ymlImage">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>180</width>
+             <height>180</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-image: url(:/built-InIcons/YML3.png);</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="3">
+    <widget class="QWidget" name="aboutWidget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>328</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>16777215</width>
+       <height>328</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_7">
+      <item row="0" column="0">
+       <widget class="CardWidget" name="specialThanksWidget">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>94</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>94</height>
+         </size>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <item row="0" column="1">
+          <widget class="StrongBodyLabel" name="StrongBodyLabel">
+           <property name="text">
+            <string>特别鸣谢</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="CardWidget" name="developersWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>329</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>329</width>
+             <height>50</height>
+            </size>
+           </property>
+           <layout class="QGridLayout" name="gridLayout">
+            <item row="0" column="1">
+             <widget class="HyperlinkButton" name="LxHTT">
+              <property name="text">
+               <string>落雪</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="3">
+             <widget class="HyperlinkButton" name="RATE">
+              <property name="text">
+               <string>RATE</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="4">
+             <widget class="HyperlinkButton" name="AEBC08">
+              <property name="text">
+               <string>AEBC08</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="0">
+             <widget class="BodyLabel" name="developersTitle">
+              <property name="text">
+               <string>开发者：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="HyperlinkButton" name="xiaoShuai">
+              <property name="text">
+               <string>小帅</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="CardWidget" name="testerWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>132</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>132</width>
+             <height>50</height>
+            </size>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_2">
+            <item row="0" column="0">
+             <widget class="BodyLabel" name="testerTitle">
+              <property name="text">
+               <string>测试员：</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="HyperlinkButton" name="nanZhu">
+              <property name="text">
+               <string>南竹</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="0" column="0" rowspan="2">
+          <spacer name="horizontalSpacer_6">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>5</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="1" column="4">
+          <widget class="CardWidget" name="userWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>224</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>224</width>
+             <height>50</height>
+            </size>
+           </property>
+           <layout class="QGridLayout" name="gridLayout_3">
+            <item row="0" column="0">
+             <widget class="BodyLabel" name="love">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">color: rgb(255, 0, 76);
+font: 25 15pt &quot;Microsoft YaHei&quot;;</string>
+              </property>
+              <property name="text">
+               <string>❤</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="BodyLabel" name="userTip">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>154</width>
+                <height>32</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>此刻正在使用启动器的你</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="2">
+             <widget class="BodyLabel" name="smile">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>😊</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="CardWidget" name="aboutContentWidget">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>210</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>210</height>
+         </size>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="0" column="2" colspan="4">
+          <spacer name="horizontalSpacer_10">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="0" column="0" rowspan="3">
+          <spacer name="horizontalSpacer_5">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>5</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item row="2" column="5">
+          <widget class="HyperlinkButton" name="openOfficialWeb">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>打开官网</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="4">
+          <widget class="HyperlinkButton" name="joinQQGroup">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>加入官方群聊</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1" colspan="5">
+          <widget class="BodyLabel" name="aboutContent">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>YML3开源版是一个开源非营利性项目，遵循GNU General Public License Version 3.0开源协议，任何人皆可使用。
+
+YML3发行版需严格遵守RATE Distribution Software General License Terms。
+
+Minecraft是美国微软公司(Microsoft Corporation.)的商标，本软件与微软公司不构成任何从属关系。</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="StrongBodyLabel" name="aboutTitle">
+           <property name="minimumSize">
+            <size>
+             <width>31</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>31</width>
+             <height>20</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>关于</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="HyperlinkButton" name="HyperlinkButton">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="text">
+            <string>打开源码仓库</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item row="0" column="2">
+    <spacer name="horizontalSpacer_3">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>HyperlinkButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PixmapLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CardWidget</class>
+   <extends>QFrame</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>CaptionLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>StrongBodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SubtitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../res/icon/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>xz</class>
+ <widget class="QWidget" name="xz">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>639</width>
+    <height>436</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_5">
+   <item row="0" column="0">
+    <widget class="SimpleCardWidget" name="SimpleCardWidget">
+     <property name="minimumSize">
+      <size>
+       <width>620</width>
+       <height>61</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>620</width>
+       <height>61</height>
+      </size>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0" rowspan="2">
+       <widget class="PixmapLabel" name="PixmapLabel">
+        <property name="minimumSize">
+         <size>
+          <width>41</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>41</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">border-image: url(:/built-InIcons/Grass.png);</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="StrongBodyLabel" name="StrongBodyLabel">
+        <property name="minimumSize">
+         <size>
+          <width>241</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>241</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>[mcversions]</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <widget class="ComboBox" name="ComboBox">
+        <property name="minimumSize">
+         <size>
+          <width>121</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>121</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="3" rowspan="2">
+       <widget class="ComboBox" name="ComboBox_2">
+        <property name="minimumSize">
+         <size>
+          <width>181</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>181</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="BodyLabel" name="BodyLabel">
+        <property name="minimumSize">
+         <size>
+          <width>111</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>111</width>
+          <height>19</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>[版本类型]</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="SimpleCardWidget" name="SimpleCardWidget_2">
+     <property name="minimumSize">
+      <size>
+       <width>621</width>
+       <height>351</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>621</width>
+       <height>351</height>
+      </size>
+     </property>
+     <widget class="SubtitleLabel" name="SubtitleLabel">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>119</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>模组加载器</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>60</y>
+        <width>591</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0" rowspan="3">
+        <widget class="PixmapLabel" name="PixmapLabel_2">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/built-InIcons/Anvil.png);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="SubtitleLabel" name="SubtitleLabel_2">
+         <property name="text">
+          <string>Forge</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="ComboBox" name="ComboBox_3"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="StrongBodyLabel" name="StrongBodyLabel_3">
+         <property name="text">
+          <string>Forge是最强大的模组加载器</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="PrimaryPushButton" name="PrimaryPushButton">
+         <property name="text">
+          <string>添加</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_2" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>591</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0" rowspan="3">
+        <widget class="PixmapLabel" name="PixmapLabel_3">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/built-InIcons/Anvil.png);
+border-image: url(:/built-InIcons/Cloth.png);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="SubtitleLabel" name="SubtitleLabel_3">
+         <property name="text">
+          <string>Fabric</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="ComboBox" name="ComboBox_4"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="StrongBodyLabel" name="StrongBodyLabel_4">
+         <property name="text">
+          <string>Fabric里有许多优化型模组</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="PrimaryPushButton" name="PrimaryPushButton_2">
+         <property name="text">
+          <string>添加</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="widget_3" native="true">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>250</y>
+        <width>591</width>
+        <height>81</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0" rowspan="3">
+        <widget class="PixmapLabel" name="PixmapLabel_4">
+         <property name="minimumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>64</width>
+           <height>63</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">border-image: url(:/built-InIcons/Anvil.png);
+border-image: url(:/built-InIcons/quilt.png);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="SubtitleLabel" name="SubtitleLabel_4">
+         <property name="text">
+          <string>Quilt</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2" colspan="2">
+        <widget class="ComboBox" name="ComboBox_5"/>
+       </item>
+       <item row="1" column="1" colspan="2">
+        <widget class="StrongBodyLabel" name="StrongBodyLabel_5">
+         <property name="text">
+          <string>Quilt仅次于上两款</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="PrimaryPushButton" name="PrimaryPushButton_3">
+         <property name="text">
+          <string>添加</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ComboBox</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PushButton</class>
+   <extends>QPushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PrimaryPushButton</class>
+   <extends>PushButton</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>PixmapLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>CardWidget</class>
+   <extends>QFrame</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>SimpleCardWidget</class>
+   <extends>CardWidget</extends>
+   <header>qfluentwidgets</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>BodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>StrongBodyLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+  <customwidget>
+   <class>SubtitleLabel</class>
+   <extends>QLabel</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../res/icon/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>selectlist</class>
+ <widget class="QWidget" name="selectlist">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>340</width>
+    <height>310</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>340</width>
+    <height>310</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" colspan="2">
+    <widget class="ListWidget" name="ListWidget">
+     <property name="iconSize">
+      <size>
+       <width>24</width>
+       <height>24</height>
+      </size>
+     </property>
+     <item>
+      <property name="text">
+       <string>新建项目</string>
+      </property>
+      <property name="icon">
+       <iconset resource="../res/icon/icons.qrc">
+        <normaloff>:/built-InIcons/Grass.png</normaloff>:/built-InIcons/Grass.png</iconset>
+      </property>
+     </item>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ListWidget</class>
+   <extends>QListWidget</extends>
+   <header>qfluentwidgets</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="../res/icon/icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

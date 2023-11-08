@@ -1,0 +1,25 @@
+<RCC>
+  <qresource prefix="built-InIcons">
+    <file>logo.png</file>
+    <file>shoko.png</file>
+    <file>Anvil.png</file>
+    <file>Cloth.png</file>
+    <file>CobbleStone.png</file>
+    <file>CommandBlock.png</file>
+    <file>CraftingTable.png</file>
+    <file>Egg.png</file>
+    <file>Glass.png</file>
+    <file>GoldBlock.png</file>
+    <file>Grass.png</file>
+    <file>GrassPath.png</file>
+    <file>Java.svg</file>
+    <file>YML3logo.png</file>
+    <file>RedstoneBlock.png</file>
+    <file>RedstoneLampOff.png</file>
+    <file>RedstoneLampOn.png</file>
+    <file>YML3.png</file>
+    <file>Error.svg</file>
+    <file>optifine.png</file>
+    <file>quilt.png</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,10 @@
+[
+	{
+		"plugin name" : "GetWeather","plugin author" : "WZRen" ,"version" : "1.0",
+		"icon" : "info","state" : "off",
+		"from name" : "WeatherApp","interface name" : "6",
+		"interface icon" : "info"
+	}
+]
+
+
