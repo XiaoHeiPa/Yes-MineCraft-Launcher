@@ -5,12 +5,13 @@ import os
 import zipfile
 
 import darkdetect
+import get_system_color
+from get_system_color import ThemeColorMonitor
 import minecraft_launcher_lib
 from PyQt5 import QtGui
 from PyQt5 import QtWidgets
 from PyQt5 import QtCore
 
-from darkdetect import theme as currentTheme
 
 from PyQt5.QtCore import Qt, QEventLoop, QTimer, QSize, QEasingCurve, QSettings, QEvent
 from PyQt5.QtCore import Qt, pyqtSignal, QSize
@@ -23,25 +24,34 @@ from qfluentwidgets import SplitFluentWindow, FluentIcon, qconfig, RoundMenu, Fl
     InfoBarPosition, ToolTipFilter, ToolTipPosition, StyleSheetBase
 
 from qfluentwidgets import SplashScreen
-from qframelesswindow import FramelessWindow, StandardTitleBar, AcrylicWindow, TitleBar
 from page_form import Form, Form2, Plugin, Form5, Form6, Pluginwidget, Mccard, Selectlist, Xz
 
 from qfluentwidgets import (NavigationInterface, NavigationItemPosition, NavigationWidget, MessageBox,
                             isDarkTheme, setTheme, Theme, setThemeColor)
 from pathlib import Path
-from enum import Enum
+
 from PyQt5.QtCore import QThread
 from subprocess import run
-import icons_rc
+
 
 import winreg
+
+
+class ThemeThread(QThread):
+
+    def __init__(self) -> None:
+        QThread.__init__(self)
+
+    def run(self) -> None:
+        while True:
+            if get_system_color.new_On_theme_change().on_theme_change:
+                setTheme(Theme.DARK if darkdetect.isDark() else Theme.LIGHT)
 
 
 class ColorThread(QThread):
 
     def __init__(self) -> None:
         QThread.__init__(self)
-
 
     def run(self) -> None:
         # 定义个性化颜色的注册表路径
@@ -61,23 +71,36 @@ class ColorThread(QThread):
                 # print("获取个性化颜色失败:", repr(e))
                 return None
 
-        # 获取个性化颜色
-        system_color = get_system_color()
-        r = system_color[0]
-        g = system_color[1]
-        b = system_color[2]
-        a = system_color[3]
-        if system_color:
+        # # 获取个性化颜色
+        # system_color = get_system_color()
+        # r = system_color[0]
+        # g = system_color[1]
+        # b = system_color[2]
+        # a = system_color[3]
+        # if system_color:
+        #     setThemeColor(color=QColor(r, g, b, a))
+
+        def callback(accent_color):
+            get_system_color()
+            system_color = get_system_color()
+            r = system_color[0]
+            g = system_color[1]
+            b = system_color[2]
+            a = system_color[3]
             setThemeColor(color=QColor(r, g, b, a))
 
-
-            # print("个性化颜色（RGBA）：", system_color)
+        monitor = ThemeColorMonitor(callback=callback)
+        monitor.check_theme_change()
 
 
 class StartmcThread(QThread):
 
     def __init__(self) -> None:
         QThread.__init__(self)
+        self._dir = None
+        self._options = None
+        self._username = None
+        self._version = None
 
     def set_data(self, version: str, username, options, dir) -> None:
         self._version = version
@@ -109,6 +132,7 @@ class window(FluentWindow, parameter):
 
         self._runmc_thread = StartmcThread()
         self._color_thread = ColorThread()
+        self._theme_thread = ThemeThread()
         # self._on_theme_change = on_theme_change()
 
         self.parameters = parameter()
@@ -123,17 +147,7 @@ class window(FluentWindow, parameter):
         w, h = rect.width(), rect.height()
         self.move(w // 2 - self.width() // 2, h // 2 - self.height() // 2)
 
-
-
-
-        # setTheme(Theme.AUTO)
-
-        self.widgettheme(self.parameters.theme)
-        # setThemeColor("#0078D4")
-
-        # self._on_theme_change.start()
-
-
+        setTheme(Theme.AUTO)
 
         # print(setTheme)
         self.setWindowTitle("Yes-MineCraft-Launcher")
@@ -156,16 +170,16 @@ class window(FluentWindow, parameter):
         self.form6 = Form6(self)
 
         # 初始化
-        self.初始化()
+        self.Initialize()
         self._color_thread.start()
-
+        self._theme_thread.start()
 
     def createSubInterface(self):
         loop = QEventLoop(self)
         QTimer.singleShot(3000, loop.quit)
         loop.exec()
 
-    def 初始化(self):
+    def Initialize(self):
         # color = 'dark' if isDarkTheme() else 'light'
         # with open(f"resource/{color}/demo.qss",encoding="utf-8")as f:
         #     self.setStyleSheet(f.read())
@@ -224,10 +238,7 @@ class window(FluentWindow, parameter):
         # mc检测
         self.Gamecard()
 
-
         # self._theme_thread.start()
-
-
 
     def _runmc_thread_finished(self) -> None:
         # This function is called after the Multi Thread Installation has been finished
@@ -835,29 +846,6 @@ class window(FluentWindow, parameter):
             duration=-1,  # won't disappear automatically
             parent=self
         )
-
-    def widgettheme(self, tag):
-        i = tag
-        if i == "AUTO":
-            setTheme(Theme.DARK if darkdetect.isDark() else Theme.LIGHT)
-
-            self.windowEffect.setMicaEffect(self.winId(), isDarkMode=True if darkdetect.isDark() else False, isAlt=True)
-            # self.windowEffect.setAcrylicEffect(self.winId(), gradientColor="99")
-
-        if i == "LIGHT":
-            self.light()
-        if i == "DARK":
-            self.dark()
-
-    def light(self):
-        setTheme(Theme.LIGHT)
-        self.windowEffect.setMicaEffect(self.winId(), isDarkMode=False, isAlt=True)
-
-    def dark(self):
-        setTheme(Theme.DARK)
-        self.windowEffect.setMicaEffect(self.winId(), isDarkMode=True, isAlt=True)
-
-        # self.windowEffect.setAcrylicEffect(self.winId(),gradientColor="F2F2F20")
 
 
 if __name__ == '__main__':
