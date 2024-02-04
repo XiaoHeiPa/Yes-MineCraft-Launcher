@@ -2,7 +2,7 @@
 
 [网页](https://mcsl.com.cn/yml3)
 
-![image](https://github.com/XiaoHeiPa/Yes-MineCraft-Launcher/assets/61075476/29e5930a-ea52-47aa-8047-2704150ef7a7)
+![image](https://github.com/XiaoHeiPa/Yes-MineCraft-Launcher/assets/61075476/b03e2a35-eb21-4a6d-a5b9-b175416584fb)
 
 ## 侵权删除
 
